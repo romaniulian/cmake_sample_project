@@ -5,7 +5,7 @@ add_executable(ipc_example main.cpp)
 #here we define that we want to use C++14
 target_compile_features(ipc_example PRIVATE cxx_std_14)
 
-target_link_libraries(ipc_example test)
+target_link_libraries(ipc_example test Class2)
 
 target_include_directories(ipc_example PRIVATE ../test/inc ../class1/inc ../class2/inc)
 
