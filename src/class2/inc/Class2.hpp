@@ -1,3 +1,5 @@
+#ifndef CLASS2_H
+#define CLASS2_H
 #include "Class1.hpp"
 class Class2
 {
@@ -8,3 +10,4 @@ public:
     ~Class2() = default;
     Class2(Class1 arg);
 };
+#endif

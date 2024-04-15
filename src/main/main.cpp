@@ -22,7 +22,7 @@ int main(int argc, const char *argv[]){
 
 	test();
 
-	Class2 var(Class1());
+	Class2 var{Class1()};
 	
 	// Creating the pipe
 	if(pipe(pipe_fd) == -1){
