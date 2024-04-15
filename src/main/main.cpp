@@ -4,6 +4,8 @@
 #include <string.h>
 #include <limits.h>
 #include "test.hpp"
+#include "Class1.hpp"
+#include "Class2.hpp"
 
 // File descriptors assigned by the pipe
 // pipe_fd[0]: read
@@ -19,6 +21,9 @@ void childTask();
 int main(int argc, const char *argv[]){
 
 	test();
+
+	Class2 var(Class1());
+	
 	// Creating the pipe
 	if(pipe(pipe_fd) == -1){
 		perror("Cannot create the pipe");
